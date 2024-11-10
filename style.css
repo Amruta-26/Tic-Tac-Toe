@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    font-size: 40px;
+    background: #014e5c;
+    color: #FF6600;
+    text-align: center;
+}
+h1{
+    color: #8FD14F;
+    text-align: center;
+    text-shadow: 4px 4px black;
+}
+
+.playArea{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+.cell
+{
+    height:100px;
+    width: 100px;
+    border: 1px solid #FF6600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+}
+
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+
+.cell:nth-child(3n+3){
+    border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:last-child{
+    border-bottom: none;
+}
+
+p{
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 30px;
+    padding: 20px;
+    color: #8FD14F;
+    text-shadow: 1px 1px black;
+}
+
+#restartGame{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid #FF6600;
+    border-radius: 15px;
+    background-color: #8FD14F;
+    color: #dd5800;
+    font-weight: 600;
+    display: none;
+}
